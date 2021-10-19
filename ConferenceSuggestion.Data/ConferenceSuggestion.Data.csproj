@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="$(AutoMapperPackageVersion)" />
+	  <PackageReference Include="EFCore.BulkExtensions" Version="$(EFCoreBulkExtensions)" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="$(MicrosoftExtensionsPackagesVersion)" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(MicrosoftEntityFrameworkPackagesVersion)" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="$(MicrosoftEntityFrameworkPackagesVersion)" />
+	  <PackageReference Include="NBB.Data.EntityFramework" Version="$(NBBPackagesVersion)" />
+	  <PackageReference Include="NBB.Data.EventSourcing" Version="$(NBBPackagesVersion)" />
+	  <ProjectReference Include="..\Abstractions\Abstractions.csproj" />
+      <ProjectReference Include="..\ConferenceSuggestion.Models\ConferenceSuggestion.Models.csproj" />
+  </ItemGroup>
+
+</Project>
