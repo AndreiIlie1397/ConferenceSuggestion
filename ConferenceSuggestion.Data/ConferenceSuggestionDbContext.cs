@@ -12,7 +12,6 @@ namespace ConferenceSuggestion.Data
         }
 
         public virtual DbSet<Conference> Conferences { get; set; }
-        public virtual DbSet<ConferenceXAttendee> ConferenceXAttendees { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
